@@ -6,76 +6,53 @@ CREATE TABLE IF NOT EXISTS pet (
   id INTEGER NOT NULL AUTO_INCREMENT,
   name  VARCHAR(300),
   category  VARCHAR(300),
+  price  INTEGER,
   PRIMARY KEY (id)
 );
 
-INSERT INTO petdb.pet VALUES ('John', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Tommy', 'Dog', 1000);
-INSERT INTO petdb.pet VALUES ('Harry', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Benny', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Tigger', 'Cat', 2000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Tommy', 'Dog', 1000);
-INSERT INTO petdb.pet VALUES ('Harry', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Benny', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Tigger', 'Cat', 2000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Tommy', 'Dog', 1000);
-INSERT INTO petdb.pet VALUES ('Harry', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Benny', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Tigger', 'Cat', 2000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Tommy', 'Dog', 1000);
-INSERT INTO petdb.pet VALUES ('Harry', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Benny', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Tigger', 'Cat', 2000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Tommy', 'Dog', 1000);
-INSERT INTO petdb.pet VALUES ('Harry', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Benny', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Tigger', 'Cat', 2000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Tommy', 'Dog', 1000);
-INSERT INTO petdb.pet VALUES ('Harry', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Benny', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Tigger', 'Cat', 2000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Tommy', 'Dog', 1000);
-INSERT INTO petdb.pet VALUES ('Harry', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Benny', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Tigger', 'Cat', 2000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Tommy', 'Dog', 1000);
-INSERT INTO petdb.pet VALUES ('Harry', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Benny', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Tigger', 'Cat', 2000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('John', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Tommy', 'Dog', 1000);
-INSERT INTO petdb.pet VALUES ('Harry', 'Dog', 2000);
-INSERT INTO petdb.pet VALUES ('Benny', 'Cat', 1000);
-INSERT INTO petdb.pet VALUES ('Tigger', 'Cat', 2000);
-INSERT INTO petdb.pet VALUES ('Emma', 'Cat', 1000);
+INSERT INTO pet(`name`, `category`, `price`)
+VALUES ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000),
+('Benny', 'Cat', 1000), ('Tigger', 'Cat', 2000), ('Emma', 'Cat', 1000), ('John', 'Cat', 1000),
+('John', 'Dog', 2000), ('John', 'Cat', 1000), ('John', 'Dog', 2000), ('Tommy', 'Dog', 1000), ('Harry', 'Dog', 2000);
